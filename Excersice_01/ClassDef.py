@@ -23,7 +23,7 @@ class Higgs(Boson):
         
     def Energy(self):
         mass = random.gauss(self.MassMean, self.MassSigma)
-        energy = (self.momentum ** 2 + mass ** 2 ) ** 0.5
+        energy = (self.momentum ** 2 + mass ** 2) ** 0.5
         # c = 1
         print(f"Generated Mass: {mass:.3f} GeV")
         print(f"Energy: {energy:.3f} GeV")
